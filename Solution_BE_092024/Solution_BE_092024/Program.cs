@@ -10,6 +10,7 @@ namespace Solution_BE_092024
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("hello world");
         }
     }
 }
