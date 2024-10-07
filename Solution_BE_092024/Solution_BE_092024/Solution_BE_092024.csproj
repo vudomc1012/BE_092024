@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Baitap\Buoi1\Bai1.cs" />
+    <Compile Include="Baitap\Buoi1\Bai2.cs" />
+    <Compile Include="Baitap\Buoi1\Bai3.cs" />
+    <Compile Include="Baitap\Buoi1\Bai4.cs" />
+    <Compile Include="Common\Validate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
