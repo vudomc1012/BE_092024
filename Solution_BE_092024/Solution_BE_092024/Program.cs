@@ -23,6 +23,10 @@ namespace Solution_BE_092024
 				Console.WriteLine("4. Tính giai thừa của một số");
 				Console.WriteLine("5. Kiểm tra số nguyên tố nhỏ hơn N");
 				Console.WriteLine("6. Kiểm tra chẵn lẻ ");
+				Console.WriteLine("7. Kiểm tra số nguyên tố");
+				Console.WriteLine("8. In ra mảng sổ lẻ và mảng số chẵn");
+				Console.WriteLine("9. Sắp xếp mảng");
+				Console.WriteLine("10. Hiển thị số bằng chữ\n");
 				Console.Write("\nNhập lựa chọn của bạn: ");
 				var NhapSo = new Validate();
 				int luaChon = (int)NhapSo.NhapSo("");
@@ -48,6 +52,18 @@ namespace Solution_BE_092024
 						break;
 					case 6:
 						Bai6();
+						break;
+					case 7:
+						Bai7();
+						break;
+					case 8:
+						Bai8();
+						break;
+					case 9:
+						Bai9();
+						break;
+					case 10:
+						Bai10();
 						break;
 					default:
 						Console.WriteLine("Lựa chọn không hợp lệ. Vui lòng thử lại.");
@@ -108,6 +124,38 @@ namespace Solution_BE_092024
 		}
 		#endregion
 
-		
+		#region Bài 7: Kiểm tra số nguyên tố
+		static void Bai7()
+		{
+			var bai7 = new Solution_BE_092024.Baitap.Buoi2.Bai7();
+			bai7.KiemTraSoNguyenTo();
+		}
+		#endregion
+
+		#region Bài 8: Cho một mảng số nguyên hãy in ra mảng sổ lẻ và mảng số chẵn
+		static void Bai8()
+		{
+			var bai8 = new Solution_BE_092024.Baitap.Buoi2.Bai8();
+			bai8.ChiaMangChanLe();
+		}
+		#endregion
+
+		#region Bài 9: Sắp xếp mảng số nguyên tăng dần và giảm dần
+		static void Bai9()
+		{
+			var bai9 = new Solution_BE_092024.Baitap.Buoi2.Bai9();
+			bai9.SapXepMang();
+		}
+		#endregion
+
+		#region Bài 10: Hiển thị số bằng chữ tương ứng
+		static void Bai10()
+		{
+			var bai10 = new Solution_BE_092024.Baitap.Buoi2.Bai10();
+			bai10.HienThiSoBangChu();
+		}
+		#endregion
+
+
 	}
 }
