@@ -47,6 +47,16 @@
     <Compile Include="Baitap\Buoi1\Bai2.cs" />
     <Compile Include="Baitap\Buoi1\Bai3.cs" />
     <Compile Include="Baitap\Buoi1\Bai4.cs" />
+    <Compile Include="Baitap\Buoi2\Bai10.cs" />
+    <Compile Include="Baitap\Buoi2\Bai5.cs" />
+    <Compile Include="Baitap\Buoi2\Bai6.cs" />
+    <Compile Include="Baitap\Buoi2\Bai7.cs" />
+    <Compile Include="Baitap\Buoi2\Bai8.cs" />
+    <Compile Include="Baitap\Buoi2\Bai9.cs" />
+    <Compile Include="Baitap\Buoi3\Bai13.cs" />
+    <Compile Include="Baitap\Buoi3\Bai14.cs" />
+    <Compile Include="Baitap\Buoi3\Bai15.cs" />
+    <Compile Include="Baitap\SoNguyenTo\SoNguyenTo.cs" />
     <Compile Include="Common\Validate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

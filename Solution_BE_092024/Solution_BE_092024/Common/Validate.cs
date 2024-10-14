@@ -26,7 +26,7 @@ namespace Solution_BE_092024.Common
 				}
 				else
 				{
-					Console.WriteLine("Đầu vào không hợp lệ. Vui lòng nhập lại.");
+					Console.WriteLine("Đầu vào không hợp lệ, bạn chỉ được nhập số. Vui lòng nhập lại.");
 				}
 			}
 		}
