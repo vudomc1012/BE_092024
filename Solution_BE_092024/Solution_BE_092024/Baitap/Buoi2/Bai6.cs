@@ -22,6 +22,7 @@ namespace Solution_BE_092024.Baitap.Buoi2
 			{
 				Console.WriteLine($"{so} là số lẻ.");
 				Console.ReadKey();
+
 			}
 		}
 	}
