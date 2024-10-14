@@ -16,10 +16,12 @@ namespace Solution_BE_092024.Baitap.Buoi2
 			if (LaSoNguyenTo.LaSoNguyenTo(so))
 			{
 				Console.WriteLine($"{so} là số nguyên tố.");
+				Console.ReadKey();
 			}
 			else
 			{
 				Console.WriteLine($"{so} không phải là số nguyên tố.");
+				Console.ReadKey();
 			}
 		}
 	}

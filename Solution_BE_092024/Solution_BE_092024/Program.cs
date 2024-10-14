@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Solution_BE_092024.Baitap.Buoi3;
 
 namespace Solution_BE_092024
 {
@@ -27,6 +28,9 @@ namespace Solution_BE_092024
 				Console.WriteLine("8. In ra mảng sổ lẻ và mảng số chẵn");
 				Console.WriteLine("9. Sắp xếp mảng");
 				Console.WriteLine("10. Hiển thị số bằng chữ\n");
+				Console.WriteLine("13. Trả về tham chiếu tới phần tử lớn nhất trong mảng");
+				Console.WriteLine("14. Hoán đổi giá trị của hai biến nguyên sử dụng tham chiếu kép");
+				Console.WriteLine("15. Thay đổi giá trị của một phần tử trong mảng sử dụng tham chiếu kép");
 				Console.Write("\nNhập lựa chọn của bạn: ");
 				var NhapSo = new Validate();
 				int luaChon = (int)NhapSo.NhapSo("");
@@ -64,6 +68,15 @@ namespace Solution_BE_092024
 						break;
 					case 10:
 						Bai10();
+						break;
+					case 13:
+						Bai13();
+						break;
+					case 14:
+						Bai14();
+						break;
+					case 15:
+						Bai15();
 						break;
 					default:
 						Console.WriteLine("Lựa chọn không hợp lệ. Vui lòng thử lại.");
@@ -156,6 +169,39 @@ namespace Solution_BE_092024
 		}
 		#endregion
 
+		#region Bài 13: Trả về tham chiếu tới phần tử lớn nhất trong mảng
+		static void Bai13()
+		{			
+			int[] numbers = { 5, 7, 3, 9, 2, 8 };
+			Bai13 maxFinder = new Bai13();
+			ref int max = ref maxFinder.FindMax(ref numbers);
+			Console.WriteLine("Giá trị lớn nhất: \n" + max);
+			Console.ReadKey();
+		}
+		#endregion
 
+		#region Bài 14: Hoán đổi giá trị của hai biến nguyên sử dụng tham chiếu kép
+		static void Bai14()
+		{
+			int x = 5;
+			int y = 10;
+			Bai14 swapper = new Bai14();
+			swapper.Swap(ref x, ref y);
+			Console.WriteLine($"Giá trị sau khi hoán đổi: x = {x}, y = {y}");
+			Console.ReadKey();
+		}
+		#endregion
+
+		#region Bài 15: Thay đổi giá trị của phần tử trong mảng
+		static void Bai15()
+		{
+			int[] numbers = { 1, 2, 3, 4, 5 };
+			Bai15 modifier = new Bai15();
+			modifier.ChangeElement(ref numbers, 2, 100);
+			Console.WriteLine("Mảng sau khi thay đổi: " + string.Join(", ", numbers));
+			Console.ReadKey();
+		}
+
+		#endregion
 	}
 }

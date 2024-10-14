@@ -36,6 +36,7 @@ namespace Solution_BE_092024.Baitap.Buoi2
 
 			Console.WriteLine("Mảng số chẵn: " + string.Join(", \n", soChan));
 			Console.WriteLine("Mảng số lẻ: " + string.Join(", \n", soLe));
+			Console.ReadKey();
 		}
 	}
 }

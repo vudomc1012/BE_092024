@@ -16,10 +16,12 @@ namespace Solution_BE_092024.Baitap.Buoi2
 			if (so % 2 == 0)
 			{
 				Console.WriteLine($"{so} là số chẵn.");
+				Console.ReadKey();
 			}
 			else
 			{
 				Console.WriteLine($"{so} là số lẻ.");
+				Console.ReadKey();
 			}
 		}
 	}

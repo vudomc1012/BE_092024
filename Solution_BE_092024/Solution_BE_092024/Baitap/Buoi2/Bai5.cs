@@ -22,6 +22,7 @@ namespace Solution_BE_092024.Baitap.Buoi2
 					Console.WriteLine("\nNhững số nguyên tố nhỏ hơn n: {0}\n",i);
 					
 				}
+				Console.ReadKey();
 			}
 		}
 	}
